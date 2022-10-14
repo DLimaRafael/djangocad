@@ -18,7 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     # CADASTRO DE USUÁRIOS
-    path('usuario/', include('cadastro.urls')),
+    path('', include('cadastro.urls')),
     # ADMIN
     path('admin/', admin.site.urls),
 ]

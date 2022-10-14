@@ -13,16 +13,27 @@
     </nav>
     <div class="content">
         <h1>Cadastro de Usuário</h1>
-        <div class="form-container">
-            <form id="cad-form">
+        <div class="formContainer">
+            {% if success == True %}
+                <div class="greenbox">
+                    <h2 class="infotext">Cadastro concluído!</h2>
+                </div>
+            {% endif %}
+            {% if errName == True %}
+                <p class="errorText">* Nome de usuário inválido!</p>
+            {% endif %}
+            {% if errDate == True %}
+                <p class="errorText">* Data inválida!</p>
+            {% endif %}
+            <form id="cadForm" method='POST'> {% csrf_token %}
                 <label for="usuario">Usuário</label>
                 <input type="text" name="usuario" id="usuario" placeholder="Seu nome de usuário">
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" id="senha" placeholder="Sua senha">
-                <p class="tip">Caso não forneça uma senha, será gerada uma para você!</p>
+                <p class="tip">Caso não forneça uma senha, Geraremos uma para você!</p>
                 <label for="nasc">Data de Nascimento</label>
                 <input type="date" name="nasc" id="nasc">
-                <input type="button" value="Confirmar">
+                <button type='submit' class='btn'>Confirmar</button>
             </form>
         </div>
     </div>
