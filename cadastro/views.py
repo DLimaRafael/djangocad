@@ -3,7 +3,7 @@ from django.utils.crypto import get_random_string
 from .models import Usuario
 
 # Create your views here.
-def home(request):
+def cadastro(request):
     err_name : bool = False
     err_date : bool = False
     success : bool = False
