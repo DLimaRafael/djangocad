@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/cons_style.css' %}">
+    <title>Consulta</title>
+</head>
+<body>
+    <div class="content">
+        <div class="mainContainer">
+            <nav id="navMenu">
+                <a href="/cadastro/">Cadastro</a>
+                <a href="/consulta/">Consulta</a>
+            </nav>
+            <h1 class="title">Consulta</h1>
+            <h2>Escolha o formato do arquivo para consultas abaixo.</h2>
+            <div class="options">
+                <a id="csvLink" href="csv/">CSV</a>
+                <a id="jsonLink" href="json/">JSON</a>
+                <a id="xlsxLink" href="xlsx/">XLSX</a>
+            </div>
+        </div>
+        <div class="imgContainer"></div>
+    </div>
+</body>
+</html>

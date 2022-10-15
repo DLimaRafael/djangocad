@@ -26,4 +26,4 @@ def cadastro(request):
             usuario.save()
             success = True
         
-    return render(request, 'index.html', {'errName': err_name, 'errDate': err_date, 'success': success})
+    return render(request, 'cadastro.html', {'errName': err_name, 'errDate': err_date, 'success': success})

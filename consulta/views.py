@@ -7,7 +7,7 @@ from datetime import datetime
 import csv, xlwt
 
 def consulta_home(request):
-    return render(request, 'index.html')
+    return render(request, 'consulta.html')
 
 def consulta_csv(request):
     usuarios = Usuario.objects.all()

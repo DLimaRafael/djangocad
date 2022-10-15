@@ -1,0 +1,60 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.formContainer {
+    flex-direction: column;
+    width: 40vw;
+}
+
+.imgContainer {
+    width: 60vw;
+    background-color: rgb(64, 140, 96);
+}
+
+.title {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 2em;
+}
+
+#navMenu {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+#navMenu a {
+    margin: 5px;
+}
+
+#cadForm {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cadForm .tip {
+    font-size: 12px;
+    user-select: none;
+    color: rgb(87, 99, 95);
+}
+
+#cadForm button {
+    margin-top: 20px;
+    width: 10vw;
+    align-self: center;
+}
+
+#cadForm input {
+    text-align: center;
+    width: 15vw;
+}
+
+#cadForm input::placeholder {
+    text-align: center;
+}
